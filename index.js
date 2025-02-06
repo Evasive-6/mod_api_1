@@ -9,7 +9,7 @@ const Menu=require('./schema')
 app.use(express.json())
 app.use(express.static('static'));
 
-const mongoURL=process.env.url;
+const mongoURL=placeholder;
 mongoose.connect(mongoURL).then(()=>{
   console.log("MongoDB connected successfully")
 }).catch((err)=>{
